@@ -1,0 +1,43 @@
+body {
+  margin: auto;
+  max-width: 200px;
+}
+
+button {
+  padding: 12px;
+  color: white;
+  background-color: darkorange;
+  border: none;
+}
+
+input {
+  padding: 10px;
+  border: darkorange 2px solid;
+}
+
+h2 {
+  margin-top: 100px;
+  padding-bottom: 2px;
+}
+
+.winner {
+  animation-name: winner_kf;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes winner_kf {
+  0% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 0;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
