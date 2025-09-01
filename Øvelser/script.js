@@ -31,11 +31,16 @@ function checkGuess() {
 
 "use strict";
 
+import getRandomNum from "../utils/utils.js";
 const btn = document.querySelector("button");
 const input = document.querySelector("input");
 const h2 = document.querySelector("h2");
 
-const randomNum = Math.floor(Math.random() * 100);
+function getRandomNum(max) {
+  Math.floor(Math.random() * max);
+}
+
+const randomNum = getRandomNum(100);
 
 btn.addEventListener("click", klik_btn);
 function klik_btn() {
