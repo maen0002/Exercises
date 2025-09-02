@@ -16,8 +16,8 @@ function generateStat() {
   list.appendChild(li);
   console.log(stats);
 
-  if (stats.length >= 17) {
+  if (stats.length > 20) {
     stats.shift();
-    list.removeChild(list.firstChild);
+    list.removeChild(list.firstElementChild);
   }
 }
