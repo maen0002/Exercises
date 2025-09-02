@@ -1,5 +1,23 @@
+import getRandomNum from "../utils/utils.js";
+
 const list = document.querySelector("ul");
 
-const li = document.createElement("li");
-li.style.setProperty("--height", "30");
-list.appendChild(li);
+setInterval(generateStat, 1000);
+
+const stats = [];
+
+function generateStat() {
+  console.log("generateStat");
+
+  const li = document.createElement("li");
+  const randomNum = getRandomNum(100);
+  stats.push(randomNum);
+  li.style.setProperty("--height", randomNum);
+  list.appendChild(li);
+  console.log(stats);
+
+  if (stats.length >= 17) {
+    stats.shift();
+    list.removeChild(list.firstChild);
+  }
+}
