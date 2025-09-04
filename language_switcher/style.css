@@ -1,0 +1,20 @@
+header {
+  background-color: lightblue;
+  font-size: 2rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+select {
+  max-height: 50px;
+  align-self: center;
+}
+
+.footer {
+  background-color: lightcoral;
+  font-size: 1.5rem;
+  padding: 15px 20px 15px 20px;
+  margin-bottom: 50px;
+}
