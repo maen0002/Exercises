@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.checkbox {
+  justify-self: start;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+header {
+  height: 60px;
+  border-radius: 0px 0px 10px 10px;
+  margin-bottom: 30px;
+}
+
+body {
+  margin: auto;
+  max-width: 1200px;
+  padding: 0px 10px 0px 10px;
+}
+
+textarea,
+input {
+  border: solid 2px white;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#submit {
+  border: 5px solid;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#submit:hover {
+  filter: brightness(80%);
+}
+
+h1 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+h3 {
+  padding-top: 20px;
+}
+
+.remove-btn {
+  border: none;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding: 5px;
+  justify-self: end;
+}
+
+.remove-btn:hover {
+  filter: brightness(80%);
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.input_section {
+  padding: 10px;
+  border-radius: 10px;
+  filter: brightness(150%);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+#todo_date_input {
+  width: 150px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>To Do List</h1>
+    </header>
+    <div class="grid">
+        <div class="input_section">
+            <h2>Opgave:</h2>
+            <input type="text" id="todo_name_input">
+        </div>
+        <div class="input_section">
+            <h2>Beskrivelse:</h2>
+            <textarea id="todo_desc_input" rows="4" cols="40"></textarea>
+        </div>
+        <div class="input_section">
+            <h2>Dato:</h2>
+            <input type="date" id="todo_date_input">
+        </div>
+    </div>
+    <button id="submit">Submit</button>
+
+
+    <div id="container">
+        <div>
+            <h3 id="todo_text"></h3>
+            <ul id="todo_container"></ul>
+        </div>
+        <div>
+            <h3 id="done_text"></h3>
+            <ul id="done_container"></ul>
+        </div>
+    </div>
+</body>
+
+</html>

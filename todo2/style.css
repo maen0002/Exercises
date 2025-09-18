@@ -1,0 +1,20 @@
+li {
+  display: flex;
+}
+
+#todo_container,
+#done_container {
+  border: 1px solid darkgray;
+  width: 50dvw;
+}
+
+#todo_container {
+  background-color: red;
+}
+#done_container {
+  background-color: green;
+}
+
+#list {
+  display: flex;
+}
